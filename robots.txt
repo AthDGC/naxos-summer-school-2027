@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://athdgc.github.io/naxos-summer-school-2027/sitemap.xml
