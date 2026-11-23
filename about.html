@@ -1,59 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Lavidas">
-<meta name="description" content="12th Naxos Summer School on Diachronic Linguistics, 4-9 July 2027, Naxos, Greece.">
-<title>About | Naxos Summer School 2027</title>
-<link rel="icon" type="image/png" href="assets/logos/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400&display=swap">
-<link rel="stylesheet" href="style.css">
+    <meta name="author" content="Lavidas">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | 12th Naxos Summer School on Diachronic Linguistics 2027</title>
+    <meta name="description"
+        content="International summer school on diachronic linguistics, computational methods, and language change. July 19-24, 2027 in Naxos, Greece.">
+    <link rel="icon" type="image/png" href="assets/logos/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-split {
+            display: flex;
+            min-height: 320px;
+            background-color: #f2ece0;
+            border-bottom: 1px solid #c8bfb0;
+            align-items: center;
+            padding: 3rem 5rem;
+            box-sizing: border-box;
+            gap: 4rem;
+        }
+        .hero-split .hero-logo {
+            flex: 0 0 auto;
+        }
+        .hero-split .hero-logo img {
+            width: 380px;
+            max-width: 100%;
+            display: block;
+        }
+        .hero-split .hero-text {
+            flex: 1;
+        }
+        .hero-split .hero-text h1 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0 0 0.35rem 0;
+            line-height: 1.25;
+        }
+        .hero-split .hero-text h2 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #555;
+            margin: 0 0 1.6rem 0;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .hero-split .hero-text .hero-meta {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 0.95rem;
+            color: #444;
+            margin: 0 0 1.8rem 0;
+            border-left: 3px solid #8B0000;
+            padding-left: 0.75rem;
+            line-height: 1.7;
+        }
+        .hero-split .hero-text .hero-btn {
+            display: inline-block;
+            padding: 0.6rem 1.8rem;
+            background-color: #8B0000;
+            color: #fff;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.04em;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .hero-split .hero-text .hero-btn:hover {
+            background-color: #6d0000;
+        }
+        @media (max-width: 720px) {
+            .hero-split {
+                flex-direction: column;
+                padding: 2rem 1.5rem;
+                gap: 1.5rem;
+            }
+            .hero-split .hero-logo img { width: 260px; }
+        }
+            .hero-split .hero-right { min-height: 220px; flex: none; }
+        }
+    </style>
+<style>
+    body, html { background-color: #F4F0EB !important; color: #000000 !important; }
+    h1, h2, h3, h4, h5, h6, .title, .headline { color: #8B0000 !important; }
+    [class*="dark"], [class*="bg-dark"] { color: #FFFFFF !important; }
+</style>
+<style>
+    body, html, main, section, article, header, nav, .bg-white, .bg-light, [class*="bg-white"] { background-color: #F4F0EB !important; }
+    body, html, p, span, li, div { color: #000000 !important; }
+    h1, h2, h3, h4, h5, h6, .title, .headline, h1 *, h2 * { color: #8B0000 !important; }
+    [class*="dark"], [class*="bg-dark"], .bg-black, footer { background-color: #1A1A1A !important; color: #FFFFFF !important; }
+    [class*="dark"] *, [class*="bg-dark"] *, .bg-black *, footer * { color: #FFFFFF !important; }
+</style>
+<style>
+    body, html, main, section, article, header, nav, footer, .bg-white, .bg-light, [class*="bg-white"] { background-color: #F4F0EB !important; }
+    body, html, p, span, li, div, footer, footer * { color: #000000 !important; }
+    h1, h2, h3, h4, h5, h6, .title, .headline, h1 *, h2 * { color: #8B0000 !important; }
+    [class*="dark"], [class*="bg-dark"], .bg-black { background-color: #1A1A1A !important; color: #FFFFFF !important; }
+    [class*="dark"] *, [class*="bg-dark"] *, .bg-black * { color: #FFFFFF !important; }
+</style>
 </head>
+
 <body>
-<nav>
-  <div class="bar">
-    <a href="index.html" class="logo">Naxos 2027</a>
-    <ul>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="program.html">Program</a></li>
-      <li><a href="descriptions.html">Courses</a></li>
-      <li><a href="topics.html">Topics</a></li>
-      <li><a href="faculty.html">Faculty</a></li>
-      <li><a href="registration.html">Register</a></li>
-      <li><a href="venue.html">Venue</a></li>
-      <li><a href="accommodation.html">Stay</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="previous.html">Previous</a></li>
-      <li><a href="support.html">Support</a></li>
-    </ul>
-  </div>
-</nav>
-<main>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Naxos 2027</a>
+            <ul>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="descriptions.html">Courses</a></li>
+                <li><a href="topics.html">Topics</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="accommodation.html">Stay</a></li>
+                <li><a href="social.html">Social</a></li>
+                <li><a href="previous.html">Previous</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<section class="text">
-<h1>12th Naxos Summer School on Diachronic Linguistics</h1>
-<p class="meta">4&ndash;9 July 2027 &middot; Naxos, Greece</p>
+        <section class="hero-split">
+        <div class="hero-logo">
+            <img src="assets/logos/12th.png" alt="12th Naxos Summer School on Diachronic Linguistics">
+        </div>
+        <div class="hero-text">
+            <h1>12th Naxos Summer School<br>on Diachronic Linguistics</h1>
+            <p class="hero-meta">
+                July 4&#8211;9, 2027<br>
+                Naxos, Greece
+            </p>
+            <a href="https://form.jotform.com/263265430070045" target="_blank" class="hero-btn">Apply Here</a>
+        </div>
+    </section>
 
-<p>The 12th Naxos Summer School on Diachronic Linguistics will be held from <strong>4 to 9 July 2027</strong> on the island of Naxos, Greece, at the former Ursuline School in the Venetian Castle of Chora. The school is organized by the National and Kapodistrian University of Athens in collaboration with Arizona State University, the University of Osnabr&uuml;ck, the University of Cambridge, and the CIVIS course &ldquo;Diachronic Linguistics in the 21st Century&rdquo;.</p>
-<p>The programme is designed for BA, MA, and PhD candidates. Whether you are investigating historical syntax, modeling linguistic evolution, or exploring digital corpora, the summer school offers an opportunity to engage with leading scholars and to expand your research horizons in one of the most inspiring settings in the Mediterranean.</p>
-<p>Participants explore language evolution through theoretical courses, computational workshops, and master classes led by international experts. The school also features a workshop and poster session on recent research in diachronic and computational linguistics. Up to 6 ECTS credits are available for successful participants.</p>
-<p class="small">National and Kapodistrian University of Athens || Summer Programs || ECTS approval: 8-2-2021, law: a90.4692/2020</p>
+    <section class="summer-school-info">
+        <div class="container">
+            <div class="info-content">
+                <h2>12th Naxos Summer School on Diachronic Linguistics</h2>
+                <p class="subtitle">Call for Applications</p>
 
-<h2>Organization</h2>
-<p><strong>Organizers:</strong> Nikolaos Lavidas, Alexander Bergs, Elly van Gelderen, Ioanna Sitaridou.</p>
-<p>The summer school is linked to the CIVIS Strand 1 Joint MA in Advanced Linguistics and to the CIVIS course &ldquo;Diachronic Linguistics in the 21st Century&rdquo;, whose online Spring School runs from 5 to 9 April 2027.</p>
-<p>A small team of MA students from the Department of English, Division of Language-Linguistics, National and Kapodistrian University of Athens, assists during the summer school.</p>
-</section>
+                <div class="description">
+                    <p>The 12th Naxos Summer School on Diachronic Linguistics will be held from <strong>4&#8211;9 July 2027</strong> on the island of Naxos, Greece, at the former Ursuline School in the Venetian Castle of Chora. The summer school is organized by the National and Kapodistrian University of Athens in collaboration with Arizona State University, University of Osnabr&#252;ck, University of Cambridge, and the CIVIS Course "Diachronic Linguistics in the 21st Century".</p>
 
-</main>
-<footer>
-  <p><strong>Organizers:</strong> Nikolaos Lavidas, Alexander Bergs, Elly van Gelderen, Ioanna Sitaridou (National and Kapodistrian University of Athens, University of Osnabr&uuml;ck, Arizona State University, University of Cambridge)</p>
-  <p><strong>Contact:</strong> nlavidas@enl.uoa.gr</p>
-  <p>Part of the CIVIS European University Alliance. Connected to the Athens Digital Glossa Chronos (AthDGC) Project.</p>
-  <p class="logos"><a href="https://civis.eu" target="_blank" rel="noopener"><img src="assets/logos/civis-large---.png" alt="CIVIS European University Alliance logo"></a></p>
-  <p>12th Naxos Summer School on Diachronic Linguistics, 4&ndash;9 July 2027.</p>
-</footer>
+                    <div style="text-align: center; margin: 32px 0;">
+                        <h3 style="margin-bottom: 12px; font-size: 28px; font-weight: 600;">Core Focus</h3>
+                        <p style="font-size: 20px; line-height: 1.6; margin: 0; font-weight: 300;">
+                            Exploring the complexities of language change through theoretical frameworks and
+                            computational tools
+                        </p>
+                    </div>
+
+                    <p>This intensive program is designed for BA, MA, and PhD candidates passionate about this core
+                        focus. Whether you are investigating historical syntax, modeling linguistic evolution, or exploring digital
+                        corpora, this summer school offers a unique opportunity to engage with leading scholars and expand your
+                        research horizons in one of the most inspiring settings in the Mediterranean.</p>
+
+                    <p>Participants will explore language evolution through a combination of theoretical courses,
+                        computational workshops, and master classes led by international experts. The summer school also
+                        features a dedicated workshop and poster session on the latest research in diachronic and
+                        computational linguistics. Up to 6 ECTS credits are available for successful participants.</p>
+
+                    <p style="font-size: 0.85rem; color: #664; text-align: center; margin-top: 2rem; font-style: italic;">
+                        National and Kapodistrian University of Athens || Summer Programs || ECTS - approval: 8-2-2021 -
+                        law: a90.4692/2020
+                    </p>
+
+                    <div class="registration-info">
+                        <h3>Registration Fees</h3>
+                        <ul>
+                            <li><strong>Early-early:</strong> 175 euros (applications submitted by 31 January 2027)</li>
+                            <li><strong>Early:</strong> 200 euros (applications submitted by 31 March 2027)</li>
+                            <li><strong>Late:</strong> 225 euros (applications submitted by 10 June 2027)</li>
+                        </ul>
+
+                        <p>A limited number of scholarships will be offered based on academic merit and program engagement.
+                           Please refer to the <a href="registration.html">Registration page</a> for application details, deadlines, and the cancellation policy.</p>
+                    </div>
+
+                    <div class="apply-section">
+                        <a href="https://form.jotform.com/263265430070045" target="_blank" class="btn btn-primary">Apply Here</a>
+                    </div>
+
+                    <p>The summer school covers a broad range of linguistic fields, including theoretical linguistics,
+                        diachronic linguistics, computational linguistics, historical syntax, and morphology. It
+                        provides a unique opportunity for intellectual exchange, interdisciplinary collaboration, and
+                        scholarly innovation in a stimulating academic environment.</p>
+
+                    <p>We look forward to welcoming you to Naxos for a week of academic excellence and collaborative
+                        discovery.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3 style="margin-bottom: 1.5rem;">Contact &amp; Information</h3>
+            <p style="margin-bottom: 1rem;">
+                <strong>Organizers:</strong><br>
+                Nikolaos Lavidas, Alexander Bergs, Elly van Gelderen, Ioanna Sitaridou<br>
+                (National and Kapodistrian University of Athens, University of Osnabrück, Arizona State University,
+                University of Cambridge)
+            </p>
+            <p style="margin-bottom: 1rem;"><strong>CIVIS BIP Course Coordinator:</strong> Nikolaos Lavidas</p>
+
+            <div style="margin-bottom: 2rem;">
+                <p style="margin-bottom: 0.5rem;"><strong>Student Assistants</strong></p>
+                <p style="margin-bottom: 0.5rem;">A small team of MA students from the Department of English, Division of Language-Linguistics, NKUA will assist during the Summer School.</p>
+                <p>We are grateful for their valuable contribution to the success of the Summer School.</p>
+            </div>
+
+            <p style="margin-top: 2rem; opacity: 0.8; font-size: 0.9rem;">
+                Part of the CIVIS European University Alliance<br>
+                Connected to the Athens Digital Glossa Chronos (AthDGC) Project
+            </p>
+
+            <div class="logos"
+                style="display: flex; justify-content: center; align-items: center; gap: 2.5rem; margin-top: 2rem; flex-wrap: wrap;">
+                <a href="https://civis.eu" target="_blank" style="display: inline-flex; align-items: center;">
+                    <img src="assets/logos/civis-large---.png" alt="CIVIS European University Alliance logo"
+                        style="height: 120px; width: auto;">
+                </a>
+                </div>
+
+            <p style="margin-top: 2rem; opacity: 0.6; font-size: 0.85rem;">
+                2027 12th Naxos Summer School on Diachronic Linguistics. All rights reserved.
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,34 +1,731 @@
-/* Naxos Summer School 2027 */
-:root{--turq:#0E8388;--ink:#222;--rule:#d9d9d9;--crimson:#A80030}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:#fff;color:var(--ink);font-family:"GFS Neohellenic","Gentium Plus",Georgia,serif;font-size:18px;line-height:1.6}
-h1,h2,h3,h4{font-family:"GFS Didot","Gentium Plus",Georgia,serif;font-weight:400;color:var(--turq);line-height:1.25}
-h1{font-size:2.2rem;margin:0 0 .6rem}
-h2{font-size:1.5rem;margin:2.2rem 0 .6rem;border-bottom:1px solid var(--turq);padding-bottom:.2rem}
-h3{font-size:1.2rem;margin:1.6rem 0 .3rem}
-h4{font-size:1.05rem;margin:0 0 .15rem}
-a{color:var(--turq)}
-nav{border-bottom:1px solid var(--turq);background:#fff}
-.bar{max-width:1040px;margin:0 auto;padding:.8rem 1.2rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1.6rem}
-.logo{font-family:"GFS Didot",Georgia,serif;font-size:1.3rem;color:var(--turq);text-decoration:none}
-nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.3rem 1.1rem}
-nav ul a{text-decoration:none;font-size:.95rem;color:var(--ink)}
-nav ul a:hover,nav ul a.active{color:var(--turq);text-decoration:underline}
-main{max-width:860px;margin:0 auto;padding:1.5rem 1.2rem 3rem}
-.hero img{width:100%;max-height:420px;object-fit:cover;display:block}
-.hero h1{margin-top:1.4rem}
-.meta{font-size:1.15rem;color:var(--ink)}
-.btn{display:inline-block;color:var(--turq);border-bottom:2px solid var(--turq);text-decoration:none;padding:.2rem 0;font-size:1.05rem}
-.small{font-size:.85rem}
-table{border-collapse:collapse;width:100%;margin:.8rem 0}
-th{text-align:left;color:var(--turq);border-bottom:1px solid var(--turq);padding:.3rem .6rem .3rem 0}
-td{border-bottom:1px solid var(--rule);padding:.4rem .6rem .4rem 0;vertical-align:top}
-.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.2rem 2rem;margin-top:1.4rem}
-.person p{margin:0;font-size:.92rem}
-.wide{width:100%;height:auto;display:block;margin:1rem 0}
-.logos img{height:70px;width:auto;margin:.6rem 1.6rem .6rem 0;vertical-align:middle}
-.u{color:var(--crimson);font-weight:bold}
-footer{max-width:860px;margin:0 auto;padding:1.5rem 1.2rem 3rem;border-top:1px solid var(--turq);font-size:.92rem}
-footer p{margin:.4rem 0}
-@media (max-width:600px){body{font-size:17px}h1{font-size:1.7rem}}
+/* Naxos Summer School 2026 - Minimalist Academic Style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #8B0000;
+    /* Black text as primary */
+    --text: #8B0000;
+    --text-light: #8B0000;
+    --bg-page: #F4F0EB;
+    --bg-surface: #ffffff;
+    --bg-soft: #f6f2e8;
+    --border: #e6c9c9;
+}
+
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    line-height: 1.6;
+    color: var(--text);
+    overflow-x: hidden;
+    background-color: var(--bg-page);
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.75rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+nav .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 0.9rem;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: var(--bg-soft);
+    color: var(--primary);
+    padding: 0 2rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    margin-top: 60px;
+}
+
+/* The background image will be handled inline in the HTML for better control */
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 51, 51, 0.1) 0%, transparent 70%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-text-big {
+    font-size: 15rem;
+    font-weight: 500;
+    color: var(--primary);
+    line-height: 1;
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+.hero-text-right {
+    grid-column: 2 / 3;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    text-shadow: none;
+}
+
+.hero-details {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+    text-shadow: none;
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+}
+
+.image-credit {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.image-credit a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(17, 17, 17, 0.3);
+}
+
+.image-credit a:hover {
+    border-bottom-color: rgba(17, 17, 17, 0.8);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+
+.btn-primary {
+    background: #8B0000;
+    color: white;
+    border-color: #8B0000;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    color: #8B0000;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #8B0000;
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 4rem 0;
+    margin-top: 60px;
+    /* Offset for fixed nav */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section-title {
+    color: var(--primary);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.about-card {
+    padding: 0;
+    background: transparent;
+}
+
+.topics {
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.topics-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.topic-item {
+    padding: 0;
+}
+
+.topic-item h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.speaker-card {
+    text-align: left;
+}
+
+.speaker-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    filter: grayscale(100%);
+}
+
+.speaker-info h4 {
+    color: var(--text);
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.affiliation {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    font-style: normal;
+}
+
+.registration {
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.pricing-card {
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+.pricing-card.featured {
+    border: 2px solid var(--primary);
+    background: transparent;
+}
+
+.pricing-card h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    color: var(--text);
+}
+
+.deadline {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.venue {
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border);
+}
+
+.venue-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.venue-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+}
+
+.previous-editions {
+    background: var(--bg-surface);
+}
+
+.editions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.edition-link {
+    background: var(--bg-soft);
+    padding: 1rem;
+    border: 1px solid var(--border);
+    text-decoration: none;
+    color: var(--text);
+    display: block;
+}
+
+.edition-link:hover {
+    background: var(--bg-surface);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.logos {
+    background: var(--bg-surface);
+    padding: 4rem 0;
+}
+
+footer {
+    background: var(--bg-page);
+    color: var(--text-light);
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--primary);
+}
+
+.topics-section {
+    padding: 4rem 2rem;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 2.5rem;
+}
+
+.topic-item {
+    border-left: 3px solid var(--primary);
+    padding-left: 1.5rem;
+}
+
+.topic-item h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0;
+}
+
+.topic-item h3 small {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.topic-item-single {
+    text-align: center;
+}
+
+.topic-item-single h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin: 0;
+}
+
+.summer-school-info {
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 4rem 2rem;
+}
+
+.info-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.info-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.description p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.registration-info {
+    background: var(--bg-soft);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--primary);
+}
+
+.registration-info h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.registration-info ul {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.registration-info li {
+    margin-bottom: 0.5rem;
+}
+
+.apply-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.apply-section .btn {
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 6rem 1rem 3rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid #8B0000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        z-index: 999;
+    }
+
+    nav .container {
+        position: relative;
+    }
+
+    /* Visible hamburger icon — tap nav area top-right to open */
+    nav .container::after {
+        content: '\2630';
+        font-size: 1.6rem;
+        line-height: 1;
+        color: var(--primary);
+        cursor: pointer;
+        padding: 0.25rem 0.5rem;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        user-select: none;
+    }
+
+    nav:hover ul,
+    nav:focus-within ul {
+        display: flex;
+    }
+
+    .venue-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* Fix EU / Erasmus+ logo overflow on mobile */
+    footer .logos img,
+    footer .logos a img,
+    footer [style*="display: flex"] img {
+        max-width: calc(100vw - 3rem) !important;
+        height: auto !important;
+        width: auto;
+    }
+
+    footer .logos,
+    footer [style*="display: flex"][style*="flex-wrap"] {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem !important;
+    }
+}/* FOOTER WITH REAL LOGOS - ADD TO style.css */
+.footer-with-logos {
+    background: #8B0000;
+    color: #f9eaea;
+    padding: 2.5rem 0;
+    text-align: center;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    border-top: 1px solid #8B0000;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-title {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f9eaea;
+    margin-bottom: 0.5rem;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin: 1.5rem 0;
+}
+
+.logo-item img {
+    height: 60px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-item a:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .logos-container { flex-direction: column; gap: 2rem; }
+    .logo-item img { height: 50px; }
+}
+
+body { padding-top: 70px !important; }
+
+
+
+html body { padding-top: 70px !important; }
+
+
+
+
+
+
+
+
+/* Custom Color Overrides */
+body, html { 
+    background-color: #F5F5DC !important; 
+    color: #000000 !important; 
+}
+
+h1, h2, h3, h4, h5, h6, .title, .headline { 
+    color: #8B0000 !important; 
+}
+
+[class*="dark"], [class*="bg-dark"], footer { 
+    color: #FFFFFF !important; 
+}
+
+/* Neutral Light Beige Background */
+body, html, main, section, article, header, nav, aside, 
+.bg-white, .bg-light, [class*="bg-white"], .white-bg { 
+    background-color: #F4F0EB !important; 
+}
+
+/* Force black text for standard elements */
+body, html, p, span:not([class*="icon"]), li, td, th, div { 
+    color: #000000 !important; 
+}
+
+/* Dark Red Headlines */
+h1, h2, h3, h4, h5, h6, .title, .headline,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, .title *, .headline * { 
+    color: #8B0000 !important; 
+}
+
+/* Preserve Dark Blocks and Force White Text Inside Them */
+[class*="dark"], [class*="bg-dark"], .bg-black, footer { 
+    background-color: #1A1A1A !important; 
+}
+
+[class*="dark"], [class*="bg-dark"], .bg-black, footer,
+[class*="dark"] *, [class*="bg-dark"] *, .bg-black *, footer * { 
+    color: #FFFFFF !important; 
+}
+
+/* Neutral Light Beige Background for EVERYTHING, including the footer */
+body, html, main, section, article, header, nav, aside, footer, 
+.bg-white, .bg-light, [class*="bg-white"], .white-bg { 
+    background-color: #F4F0EB !important; 
+}
+
+/* Force black text for standard elements and the footer */
+body, html, p, span:not([class*="icon"]), li, td, th, div, footer, footer * { 
+    color: #000000 !important; 
+}
+
+/* Dark Red Headlines */
+h1, h2, h3, h4, h5, h6, .title, .headline,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 *, .title *, .headline * { 
+    color: #8B0000 !important; 
+}
+
+/* Preserve Dark Blocks (BUT NOT the footer) */
+[class*="dark"], [class*="bg-dark"], .bg-black { 
+    background-color: #1A1A1A !important; 
+}
+
+/* Force white text ONLY inside those specific dark blocks */
+[class*="dark"], [class*="bg-dark"], .bg-black,
+[class*="dark"] *, [class*="bg-dark"] *, .bg-black * { 
+    color: #FFFFFF !important; 
+}

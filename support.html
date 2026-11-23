@@ -1,57 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Lavidas">
-<meta name="description" content="12th Naxos Summer School on Diachronic Linguistics, 4-9 July 2027, Naxos, Greece.">
-<title>Supported By | Naxos Summer School 2027</title>
-<link rel="icon" type="image/png" href="assets/logos/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400&display=swap">
-<link rel="stylesheet" href="style.css">
+    <meta name="author" content="Lavidas">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supported By | 12th Naxos Summer School 2027</title>
+    <link rel="icon" type="image/png" href="assets/logos/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .support-page {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            min-height: 100vh;
+        }
+
+        .support-header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            padding-bottom: 2rem;
+            background: white;
+            padding-top: 1.5rem;
+        }
+
+        .support-section {
+            margin-bottom: 4rem;
+            padding: 0;
+            background: white;
+            border-radius: 0;
+            border-left: none;
+        }
+
+        .support-section h2 {
+            color: #1a4d8f;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        .support-section h3 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .acknowledgment-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2.5rem;
+            align-items: center;
+            justify-items: center;
+            margin: 2rem 0 3rem 0;
+            padding-bottom: 2rem;
+        }
+
+        @media (max-width: 900px) {
+            .logo-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        .logo-item {
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 0;
+            box-shadow: none;
+            transition: none;
+        }
+
+        .logo-item:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        .logo-item img,
+        .uniform-logo {
+            height: 150px;
+            width: 100%;
+            max-width: 300px;
+            object-fit: contain;
+            margin-bottom: 0.5rem;
+        }
+
+        .civis-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .civis-logo {
+            height: 160px;
+            margin-bottom: 1rem;
+        }
+
+        .eu-logo {
+            height: 80px;
+            width: auto;
+        }
+
+        .funding-details {
+            background: #e3f2fd;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #2196f3;
+        }
+
+        .project-info {
+            background: #fff3e0;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #ff9800;
+        }
+    </style>
+<style>
+    body, html { background-color: #F4F0EB !important; color: #000000 !important; }
+    h1, h2, h3, h4, h5, h6, .title, .headline { color: #8B0000 !important; }
+    [class*="dark"], [class*="bg-dark"] { color: #FFFFFF !important; }
+</style>
+<style>
+    body, html, main, section, article, header, nav, .bg-white, .bg-light, [class*="bg-white"] { background-color: #F4F0EB !important; }
+    body, html, p, span, li, div { color: #000000 !important; }
+    h1, h2, h3, h4, h5, h6, .title, .headline, h1 *, h2 * { color: #8B0000 !important; }
+    [class*="dark"], [class*="bg-dark"], .bg-black, footer { background-color: #1A1A1A !important; color: #FFFFFF !important; }
+    [class*="dark"] *, [class*="bg-dark"] *, .bg-black *, footer * { color: #FFFFFF !important; }
+</style>
+<style>
+    body, html, main, section, article, header, nav, footer, .bg-white, .bg-light, [class*="bg-white"] { background-color: #F4F0EB !important; }
+    body, html, p, span, li, div, footer, footer * { color: #000000 !important; }
+    h1, h2, h3, h4, h5, h6, .title, .headline, h1 *, h2 * { color: #8B0000 !important; }
+    [class*="dark"], [class*="bg-dark"], .bg-black { background-color: #1A1A1A !important; color: #FFFFFF !important; }
+    [class*="dark"] *, [class*="bg-dark"] *, .bg-black * { color: #FFFFFF !important; }
+</style>
 </head>
+
 <body>
-<nav>
-  <div class="bar">
-    <a href="index.html" class="logo">Naxos 2027</a>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="program.html">Program</a></li>
-      <li><a href="descriptions.html">Courses</a></li>
-      <li><a href="topics.html">Topics</a></li>
-      <li><a href="faculty.html">Faculty</a></li>
-      <li><a href="registration.html">Register</a></li>
-      <li><a href="venue.html">Venue</a></li>
-      <li><a href="accommodation.html">Stay</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="previous.html">Previous</a></li>
-      <li><a href="support.html" class="active">Support</a></li>
-    </ul>
-  </div>
-</nav>
-<main>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Naxos 2027</a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="descriptions.html">Courses</a></li>
+                <li><a href="topics.html">Topics</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="accommodation.html">Stay</a></li>
+                <li><a href="social.html">Social</a></li>
+                <li><a href="previous.html">Previous</a></li>
+                <li><a href="support.html" class="active">Support</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<section class="text">
-<h1>12th Naxos Summer School on Diachronic Linguistics</h1>
-<h2>Coordinating Institutions</h2>
-<p class="logos">
-<a href="https://en.uoa.gr" target="_blank" rel="noopener"><img src="assets/logos/university_of_athens.jpg" alt="National and Kapodistrian University of Athens logo"></a>
-<a href="https://www.asu.edu" target="_blank" rel="noopener"><img src="assets/logos/asu.png" alt="Arizona State University logo"></a>
-<a href="https://www.cam.ac.uk" target="_blank" rel="noopener"><img src="assets/logos/cambridge.png" alt="University of Cambridge logo"></a>
-<a href="https://www.uni-osnabrueck.de/en/" target="_blank" rel="noopener"><img src="assets/logos/osnabrueck.png" alt="University of Osnabrueck logo"></a>
-</p>
-<h2>CIVIS</h2>
-<p class="logos"><a href="https://civis.eu" target="_blank" rel="noopener"><img src="assets/logos/civis-large---.png" alt="CIVIS European University Alliance logo"></a></p>
-</section>
+    <div class="support-page">
+        <div class="support-header">
+            <h1>12th Naxos Summer School on Diachronic Linguistics</h1>
+            
+        </div>
 
-</main>
-<footer>
-  <p><strong>Organizers:</strong> Nikolaos Lavidas, Alexander Bergs, Elly van Gelderen, Ioanna Sitaridou (National and Kapodistrian University of Athens, University of Osnabr&uuml;ck, Arizona State University, University of Cambridge)</p>
-  <p><strong>Contact:</strong> nlavidas@enl.uoa.gr</p>
-  <p>Part of the CIVIS European University Alliance. Connected to the Athens Digital Glossa Chronos (AthDGC) Project.</p>
-  <p class="logos"><a href="https://civis.eu" target="_blank" rel="noopener"><img src="assets/logos/civis-large---.png" alt="CIVIS European University Alliance logo"></a></p>
-  <p>12th Naxos Summer School on Diachronic Linguistics, 4&ndash;9 July 2027.</p>
-</footer>
+        
+
+        <div class="support-section">
+            <h2>Coordinating Institutions</h2>
+            <div class="logo-grid"
+                style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; justify-items: center;">
+                <div class="logo-item">
+                    <a href="https://en.uoa.gr" target="_blank">
+                        <img src="assets/logos/university_of_athens.jpg"
+                            alt="National and Kapodistrian University of Athens logo" class="uniform-logo">
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.asu.edu" target="_blank">
+                        <img src="assets/logos/asu.png" alt="Arizona State University logo" class="uniform-logo">
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.cam.ac.uk" target="_blank">
+                        <img src="assets/logos/cambridge.png" alt="University of Cambridge logo" class="uniform-logo">
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.uni-osnabrueck.de/en/" target="_blank">
+                        <img src="assets/logos/osnabrueck.png" alt="University of Osnabrueck logo" class="uniform-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2027 12th Naxos Summer School on Diachronic Linguistics. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
