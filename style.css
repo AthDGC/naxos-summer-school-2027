@@ -66,3 +66,13 @@ footer{border-top:1px solid var(--ink);margin-top:3rem}
 .copy{text-align:center;font-size:.8rem;color:var(--soft);margin:0;padding:1rem 1rem 2rem}
 @media (max-width:860px){.intro-grid,.split,.three,.two,.foot{grid-template-columns:1fr}.insts,.people{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}.stats div:nth-child(3){border-left:0}.split img{height:260px}}
 @media (max-width:520px){body{font-size:17px}.insts,.people,.plainpage .insts{grid-template-columns:1fr}}
+
+.updates{list-style:none;padding:0;margin:1rem 0}
+.updates li{border-top:1px solid var(--rule,#ccc);padding:.8rem 0}
+.island-hero{margin:1.4rem 0 0}
+.island-hero img{width:100%;height:min(64vh,600px);object-fit:cover;display:block}
+.island-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:1.2rem}
+.island-row figure{margin:0}
+.island-row img{width:100%;height:240px;object-fit:cover;display:block}
+#island figcaption{font-size:.8rem;color:#555;margin-top:.35rem}
+@media (max-width:860px){.island-row{grid-template-columns:1fr}.island-row img{height:220px}}
